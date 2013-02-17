@@ -9,6 +9,13 @@ Current Version: 1.0
 Ajetias is a set of web designing tools written for fun as a hobby.
 You may use it as you wish under the MIT license (Open Source).
 
+##Usage
+The files index.html, script.js, and style.css have to be present in the same directory.
+Open index.html in a web browser and your good to go!
+The show ouput in browser button combines the three text areas into a working html file and is output in an iframe.
+The download button currently only works in Chrome.
+The Save to Local Storage saves the current instance to local storage, has been tested in chrome.
+
 
 ##License
 

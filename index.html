@@ -1,0 +1,105 @@
+<html>
+<head>
+
+<title>Ajetias - Online HTML Editor</title>
+
+<script language="javascript" src="script.js" type="application/javascript"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body onload="ajetias_init()">
+<div id="ajetias_main_div" align="center" class="content">
+<h1>Welcome to Ajetias! The Online Html Javascript CSS editor!</h1>
+
+<div id="ajetias_edit_div">
+	<div id="ajetias_html_div">
+		<h2>Html Code</h2>
+		<textarea id="ajetias_html_box" wrap="off" onfocus="ajetias_edit_increase_width(this);" onblur="ajetias_edit_decrease_width();"></textarea><br />
+		
+	</div>
+	<div id="ajetias_script_div">
+		<h2>JavaScript</h2>
+		<textarea  id="ajetias_script_box" wrap="off" onfocus="ajetias_edit_increase_width(this);" onblur="ajetias_edit_decrease_width();"></textarea><br />
+		
+	</div>
+	<div id="ajetias_css_div">
+		<h2>CSS Styles</h2>
+		<textarea  id="ajetias_style_box" wrap="off" onfocus="ajetias_edit_increase_width(this);" onblur="ajetias_edit_decrease_width();"></textarea><br />
+		
+	</div>
+	<br />
+	<a class="button" href="#ajetias_main_div" onclick="ajetias_codeToView()">See Output In Browser</a> 
+	<a class="button" href="#ajetias_main_div" onclick="ajetias_show_black_dim_download()">Download Code To Local Disk</a>
+	<a class="button" href="#ajetias_main_div" onclick="ajetias_LocalStorage()">Save to / Open from Local Storage</a>
+	<br /><br />
+</div>
+
+<div id="ajetias_view_div" class="content">
+<div id="ajetias_black_dim" >
+<div id="ajetias_close_black_dim_button">
+	<a href="#ajetias_main_div" onclick="ajetias_remove_black_dim()">Close</a>
+</div>
+
+
+<div id="ajetias_output_div" class="content">
+<iframe id="ajetias_view_iframe" src="about:blank">Your Browser Needs to support iframes...</iframe>
+</div>
+
+<div id="ajetias_download_div" class="content">
+<br />
+<div><h2>Works only in Chrome</h2></div>
+<div>
+<a class="button" download="index.html" href="" onclick="ajetias_download_output(this);">Download Entire Output Code</a> as
+<input type="text" id="ajetias_output_name_box" value="index.html"><br /><br />
+</div>
+
+<div>
+<a class="button" download="plain.html" href="" onclick="ajetias_download_plain_html(this);">Download Only Plain HTML Code</a> as
+<input type="text" id="ajetias_html_name_box" value="plain.html"><br /><br />
+</div>
+
+<div>
+<a class="button" download="script.js" href="" onclick="ajetias_download_script(this);">Download Only JavaScript</a> as
+<input type="text" id="ajetias_script_name_box" value="script.js"><br /><br />
+</div>
+
+<div>
+<a class="button" download="style.css" href="" onclick="ajetias_download_style(this);">Download Only StyleSheet</a> as
+<input type="text" id="ajetias_style_name_box" value="style.css"><br /><br />
+</div>
+</div>
+
+<div id="ajetias_save_div" class="content">
+<br />
+<a class="button" id="ajetias_save_button" href="#ajetias_main_div" onclick="ajetias_save_instance()">Save Instance as...</a>
+<input type="text" id="ajetias_localstorage_name_box" value="instance1"><br /><br /><br />
+<select id="ajetias_instance_selector" >
+	<option>Select a Saved Instance...</option>
+</select>
+<a class="button" id="ajetias_open_button" href="#ajetias_main_div" onclick="ajetias_open_instance()">Open Instance</a>
+<a class="button" id="ajetias_remove_button" href="#ajetias_main_div" onclick="ajetias_remove_instance()">Remove Instance</a>
+</div>
+
+</div>
+(C)2012 Sai Teja Jammalamadaka. All Rights Reserved. This is an experimental site, accurate output results are not guaranteed.
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8513476; 
+var sc_invisible=1; 
+var sc_security="c0fefdba"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost +
+"statcounter.com/counter/counter.js'></"+"script>");</script>
+<noscript><div class="statcounter"><a title="free hit
+counter" href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/8513476/0/c0fefdba/1/"
+alt="free hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

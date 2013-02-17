@@ -1,0 +1,219 @@
+body
+{
+font-family: calibri;
+min-width:820px;
+background: #E6E6E6;
+}
+
+h1
+{
+    margin-bottom: 0px;
+}
+
+textarea
+{
+padding: 5px 10px 5px 10px;
+margin: 0px 10px 10px 5px;
+font-family: calibri;
+font-size: 12px;
+border-color: black;
+border-width: 1px;
+border-radius: 10px 0px 10px 0px;
+box-shadow: 0px 0px 5px black;
+width:95%;
+height:300px;
+
+transition:all 0.25s ease;
+-moz-transition:all 0.25s ease; /* Firefox 4 */
+-webkit-transition:all 0.25s ease; /* Safari and Chrome */
+-o-transition:all 0.25s ease; /* Opera */
+}
+
+textarea:hover
+{
+color:blue;
+box-shadow: 5px 5px 20px black;
+}
+
+textarea:focus
+{
+color:black;
+box-shadow: 0px 0px 20px black;
+}
+
+input, select
+{
+padding: 5px 10px 5px 10px;
+margin: 0px 10px 10px 5px;
+font-family: calibri;
+font-size: 12px;
+border-color: black;
+border-width: 1px;
+border-radius: 10px 0px 10px 0px;
+box-shadow: 0px 0px 5px black;
+}
+
+.content a {
+color: black;
+padding: 5px 15px 5px 10px;
+margin: 0px 10px 0px 10px;
+background: #B4B4B4;
+box-shadow: -2px 3px 10px black;
+border: 2px solid #868686;
+border-radius: 10px 25px 25px 10px;
+font-family: calibri;
+font-size: 12px;
+
+transition:all 0.25s ease;
+-moz-transition:all 0.25s ease; /* Firefox 4 */
+-webkit-transition:all 0.25s ease; /* Safari and Chrome */
+-o-transition:all 0.25s ease; /* Opera */
+}
+
+.content a:hover
+{
+background: #ECE5E5;
+padding: 7px 18px 7px 12px;
+margin: 0px 12px 0px 12px;
+}
+
+.content a:active
+{
+
+	background: #B4B4B4;
+	box-shadow: 0px 0px 0px black;
+
+}
+
+
+#ajetias_main_div
+{
+
+}
+
+#ajetias_edit_div
+{
+
+}
+
+#ajetias_view_div
+{
+
+}
+
+#ajetias_html_div
+{
+display:inline-block;
+width: 30%;
+}
+
+#ajetias_script_div
+{
+display:inline-block;
+width: 30%;
+}
+
+#ajetias_css_div
+{
+display:inline-block;
+width: 30%;
+}
+
+#ajetias_view_iframe
+{
+position: absolute; 
+height: 90%; 
+width: 90%;  
+z-index: 51; 
+top: 5%; 
+left: 5%;
+margin: 0px 10px 10px 5px;
+border-color: black;
+border-width: 0px;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 0px 0px 5px black;
+background: #FFFFFF;
+display:none;
+}
+
+#ajetias_black_dim
+{
+height: 0px; 
+width: 0px; 
+position: absolute; 
+top: 50%; 
+left: 50%;
+z-index: -1; 
+border-radius: 3px 3px 3px 3px;
+background-color: rgba(0,0,0,0.5);
+visibility:hidden;
+}
+
+#ajetias_close_black_dim_button
+{
+z-index: 51; 
+position: absolute; 
+top: 1%; 
+left: 5%;
+z-index: 52;
+display:none;
+}
+
+#ajetias_download_div
+{
+position: absolute; 
+height: 60%; 
+width: 60%;  
+z-index: 50; 
+top: 20%; 
+left: 20%;
+margin: 0px 10px 10px 5px;
+border-color: black;
+border-width: 0px;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 0px 0px 5px black;
+background: #FFFFFF;
+overflow:hidden;
+display:none;
+}
+
+#ajetias_save_div
+{
+position: absolute; 
+height: 70%; 
+width: 70%;  
+z-index: 50; 
+top: 15%; 
+left: 15%;
+margin: 0px 10px 10px 5px;
+border-color: black;
+border-width: 0px;
+border-radius: 3px 3px 3px 3px;
+box-shadow: 0px 0px 5px black;
+background: #FFFFFF;
+overflow:hidden;
+display:none;
+}
+
+div
+{
+transition-property:width,height,left,top,visibility;
+transition-duration:500ms;
+transition-timing-function:ease-out;
+
+/* Firefox 4 */
+-moz-transition-property:width,height,left,top,visibility;
+-moz-transition-duration:500ms;
+-moz-transition-timing-function:ease-out;
+
+/* Safari and Chrome */
+-webkit-transition-property:width,height,left,top,visibility;
+-webkit-transition-duration:500ms;
+-webkit-transition-timing-function:ease-out;
+
+/* Opera */
+-o-transition-property:width,height,left,top,visibility;
+-o-transition-duration:500ms;
+-o-transition-timing-function:ease-out;
+
+}
