@@ -41,6 +41,8 @@ function ajetias_codeToView()
 
 
 	ajetias_show_black_dim_output();
+    
+    return false;
 }
 
 function ajetias_init()
@@ -103,7 +105,7 @@ function ajetias_show_black_dim_output()
 	ajetias_show_black_dim();
 	document.getElementById('ajetias_view_iframe').style.display = "inline";
 	document.getElementById('ajetias_close_black_dim_button').style.display = "inline";
-
+    return false;
 }
 function ajetias_show_black_dim_download()
 {
@@ -111,7 +113,7 @@ function ajetias_show_black_dim_download()
 	ajetias_show_black_dim();
 	document.getElementById('ajetias_download_div').style.display = "inline";
 	document.getElementById('ajetias_close_black_dim_button').style.display = "inline";
-
+    return false;
 }
 function ajetias_remove_black_dim()
 {
@@ -125,6 +127,7 @@ function ajetias_remove_black_dim()
 	document.getElementById('ajetias_download_div').style.display = "none";
 	document.getElementById('ajetias_save_div').style.display = "none";
 	document.getElementById('ajetias_close_black_dim_button').style.display = "none";
+    return false;
 }
 
 function ajetias_edit_increase_width(tag)
@@ -148,6 +151,7 @@ function ajetias_LocalStorage()
 	ajetias_show_black_dim();
 	document.getElementById('ajetias_save_div').style.display = "inline";
 	document.getElementById('ajetias_close_black_dim_button').style.display = "inline";
+    return false;
 }
 
 function ajetias_save_instance()
@@ -162,6 +166,7 @@ localStorage[name]=JSON.stringify(content);
 //alert(JSON.stringify(content));
 ajetias_generate_instance_list();
 alert("Instance Saved");
+return false;
 }
 
 function ajetias_generate_instance_list()
@@ -192,6 +197,7 @@ document.getElementById("ajetias_style_box").value = stored_data.css;
 //alert(JSON.parse(localStorage[selector.value]));
 ajetias_remove_black_dim();
 }
+return false;
 }
 
 function ajetias_remove_instance()
@@ -205,4 +211,5 @@ localStorage.removeItem(selector.value);
 ajetias_generate_instance_list();
 alert("Instance Removed");
 }
+return false;
 }
