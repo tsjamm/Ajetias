@@ -53,6 +53,31 @@ border-radius: 10px 0px 10px 0px;
 box-shadow: 0px 0px 5px black;
 }
 
+#fork_github_a
+{
+    font-family: calibri;
+    font-size: 12px;
+}
+
+#fork_github_a div
+{
+    position:absolute;
+    top:35px;
+    right:-35px;
+    background-color:rgb(221,66,66);
+    color:white;
+    font-family:interstate,verdana,arial;
+    font-weight:bold;
+    height:15px;
+    width:200px;
+    
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
 .content a {
 color: black;
 padding: 5px 15px 5px 10px;

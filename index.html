@@ -8,12 +8,14 @@
 
 </head>
 <body onload="ajetias_init()">
-<div id="ajetias_main_div" align="center" class="content">
+<div id="ajetias_main_div" align="center" class="">
 <h1>Welcome to Ajetias! The Online Html Javascript CSS editor!</h1>
 
-<a href="http://tsjamm.github.com/Ajetias"><div style="position:absolute;top:35px;right:-35px;background-color:rgb(221,66,66);color:white;font-family:interstate,verdana,arial;font-weight:bold;height:15px;width:200px;transform: rotate(30deg);-ms-transform: rotate(30deg);-webkit-transform: rotate(30deg);-o-transform: rotate(30deg);-moz-transform: rotate(30deg);">Fork Me On Github</div></a>
+<a id="fork_github_a" href="http://tsjamm.github.com/Ajetias">
+    <div style="">Fork Me On Github</div>
+</a>
 
-<div id="ajetias_edit_div">
+<div id="ajetias_edit_div" class="content">
 	<div id="ajetias_html_div">
 		<h2>Html Code</h2>
 		<textarea id="ajetias_html_box" wrap="off" onfocus="ajetias_edit_increase_width(this);" onblur="ajetias_edit_decrease_width();"></textarea><br />
